@@ -1,0 +1,392 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* my code */
+* {
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+
+.o-asideCountry{
+    /* border: solid 1px blue; */
+    background: #424245;
+    width: 100%;
+    position: fixed;
+}
+.o-asideCountry__containerMain {
+    /* border: solid 1px red; */
+    max-width: 1024px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.92);
+}
+.a-textCountry {
+    /* border: solid 1px green; */
+    height: 34px;
+    max-width: 430px;
+    margin-right: 19.594px;
+    font-size: 12px;
+    line-height: 1.41667;
+}
+.o-asideCountry__containerDropdown {
+    /* border: solid 1px yellowgreen; */
+    height: 36px;
+    display: flex;
+    display: none; /*나중에 추가 작업*/
+}
+.m-dropdownCountry__iconCheck img{
+    width: 18px;
+    height: 24px;
+}
+
+
+.o-navMenu {
+    background: rgba(0, 0, 0, .8);
+    width: 100%;
+    margin-top: 70px;
+    position: fixed;
+}
+.o-navMenu__container {
+    /* border: solid 1px yellow; */
+    max-width: 1024px;
+    margin: auto;
+}
+.o-navMenu__ul{
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.o-navMenu__list a{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 3.66667;
+    font-weight: 400;
+    color: #f5f5f7;
+    text-decoration: none;
+}
+
+.o-main {
+    padding-top: 114px;
+}
+.m-main__sectionUnicef{
+    background: #f5f5f7;
+}
+.m-sectionUnicef__container {
+    /* border: 1px solid red; */
+    height: 32px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-sectionUnicef__imgLogo{
+    width: 122px;
+    height: 32px;
+}
+.m-sectionUnicef__linkText {
+    /* border: 1px solid blue; */
+    margin-left: 14px;
+    color: #06c;
+    font-size: 14px;
+    text-decoration: none;
+}
+.m-sectionUnicef__linkText::after{
+    content: "";
+    background-image: url("./assets/icons/arrowup1.png");
+    width: 9.7333px;
+    height: 14px;
+    margin-left: .3em;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.m-sectionOneColumn__container, .m-sectionTwoColumns__container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.a-linkPictureOneColumn, .a-linkPictureTwoColumns {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #fbfbfd;
+    z-index: -1;
+}
+.m-containerTextOneColumn, .m-containerTextTwoColumns {
+    text-align: center;
+}
+.m-containerCtaButton {
+    display: flex;
+    justify-content: center;
+}
+
+.m-sectionOneColumn__container{
+    height: 704px;
+}
+.a-linkPictureOneColumn.-iphone13 {
+    background-image: url("https://www.apple.com/v/home/aq/images/heroes/iphone-13/hero_iphone13_avail__gnqqkzuai6um_largetall_2x.jpg");
+}
+.a-linkPictureOneColumn.-iphone13pro {
+    background-image: url("https://www.apple.com/v/home/aq/images/heroes/iphone-13-pro/hero_iphone13pro_avail__iy77cld0zwii_largetall_2x.jpg")
+}
+.a-linkPictureOneColumn.-collegeDeal {
+    background-image: url("https://www.apple.com/v/home/aq/images/heroes/back-to-school-2022/hero_bts__bcuslanw39xe_largetall_2x.jpg")
+}
+.m-containerTextOneColumn {
+    padding-top: 47px;
+}
+.a-titleOneColumn {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.07143;
+}
+.a-subtitleOneColumn {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.10722;
+}
+.m-main__sectionOneColumn .m-containerCtaButton {
+    /* border: solid 1px red; */
+    margin-top: .65em;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.381;
+}
+.a-containerCtaButton_button {
+    text-decoration: none;
+    color: rgb(0, 102, 204);
+}
+.a-containerCtaButton_button.-buy {
+    margin-left: 35px;
+}
+#a-titleOneColumn__supercharged {
+    color:rgb(202, 33, 102)
+}
+
+
+.m-main__sectionTwoColumns {
+    display: grid;
+    height: 1764px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.m-sectionTwoColumns__container {
+    /* border: 1px solid cyan; */
+}
+.a-linkPictureTwoColumns.-macBookAir {
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/macbook-air/promo_macbookair__fywl7i82fueu_large_2x.png")
+}
+.a-linkPictureTwoColumns.-macBookPro13 {
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/macbook-pro-13/promo_mbp13__buwssod6c8vm_large_2x.jpg")
+}
+.a-linkPictureTwoColumns.-appleWatch7 {
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/watch-series-7/promo_watch_lte__djeaso7ukrsm_large_2x.jpg")
+}
+.a-linkPictureTwoColumns.-ipadAir {
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/ipad-air/promo_ipadair_avail__ferd4bfpcdm6_large_2x.jpg")
+}
+.a-linkPictureTwoColumns.-appleCard {
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/apple-card/tile__cauwwcyyn9hy_large_2x.jpg")
+}
+.a-linkPictureTwoColumns.-airPods {
+    background-image: url("https://www.apple.com/v/home/aq/images/promos/airpods-spatial/promo_airpods_spatial__cak1sq3kb1w2_large_2x.jpg")
+}
+.a-titleTwoColumns {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-top: 53px;
+}
+.a-subtitleTwoColumns {
+    font-size: 21px;
+    line-height: 1.2381;
+    font-weight: 400;
+}
+.m-containerTextTwoColumns.-macBookPro13, .m-containerTextTwoColumns.-ipadAir {
+    color: #f5f5f7;
+}
+.m-containerTextTwoColumns.-airPods {
+    color: #f5f5f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 56px;
+}
+.m-main__sectionTwoColumns .m-containerCtaButton{
+    /* border: solid 2px orange; */
+    margin-top: .7em;
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+}
+
+.m-main__sectionBanners {
+    height: 561.13167px;
+}
+.m-containerCarousel {
+    width: 995px;
+    height: 523.13167px;
+    margin: auto;
+    background-image: url("https://www.apple.com/v/home/aq/images/tv-plus-gallery/fnb__brvfy48gzsz6_large_2x.jpg");
+}
+.m-containerCarouselControl {
+    /* border: solid 1px blueviolet; */
+    height: 38px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-containerCarouselControl_button.-tabList {
+    /* border: solid 1px violet; */
+    width: 264px;
+    height: 25px;
+}
+.m-ulCarouselControl {
+    display: flex;
+    justify-content: space-around;
+}
+.m-ulCarouselControl li a{
+    text-decoration: none;
+}
+.m-containerCarouselControl_button.-pause{
+    /* border: solid 1px violet; */
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 2px;
+    right: 30px;
+    background-image: url("./assets/icons/pause.png");
+    background-size: contain;
+}
+
+
+.o-footer {
+    background: #f5f5f7;
+    color: #6e6e73;
+}
+.m-containerFooter {
+    width: 980px;
+    margin: 0px auto;
+    padding: 22px;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+}
+.m-sectionFooterNotes {
+    border-bottom: 1px solid #deded7;
+    padding: 17px 0 11px;
+}
+.m-sectionFooterNotes ul li{
+    padding-bottom: 0.8em;
+}
+
+.m-navSiteMap {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+}
+.m-columnSiteMap {
+    flex: 1;
+}
+.a-labelSiteMap h3 {
+    margin-bottom: .8em; 
+    font-weight: 600;
+}
+.m-ulSiteMap li {
+    margin-bottom: .8em;
+}
+.m-ulSiteMap li a {
+    text-decoration: none;
+    color: #424245;
+}
+
+.m-sectionLastFooter {
+    margin: 34px 0px 21px;
+}
+.m-sectionLastFooter__text.-moreShops {
+    margin-bottom: 7px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d2d2d7;
+}
+.m-sectionLastFooter__container.-legal {
+    display: flex;
+    position: relative;
+}
+.a-textLastFooter.-copyright, .m-containerLegalLinks {
+    margin-right: 30px;
+}
+.a-linksLegal {
+    border-right: 1px solid #d2d2d7;
+    margin-right: 7px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #424245;;
+}
+.a-linksLegal:last-child {
+    border: none;
+}
+.a-textLastFooter.-localCountry{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
